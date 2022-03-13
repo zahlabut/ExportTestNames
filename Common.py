@@ -41,8 +41,12 @@ def collect_script_paths(path):
 def pair_list_elements(lis):
     return list(zip(lis, lis[1:] + lis[:1]))
 
-def print_dic(dic):
+def print_tests(dic):
+    number_of_tests=0
     for k in list(dic.keys()):
         print_in_color(k, 'yellow')
         for val in dic[k]:
             print_in_color(val, 'green')
+            number_of_tests+=1
+    print_in_color('Total Number of tests is: '+str(number_of_tests), 'bold')
+    return(number_of_tests)

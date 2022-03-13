@@ -20,13 +20,17 @@ class BlacklistsAdminTest(BaseBlacklistsTest):
     def test_delete_blacklist(self):
     def test_list_blacklists(self):
     def test_update_blacklist(self):
+
 class TestBlacklistNotFoundAdmin(BaseBlacklistsTest):
 
     def test_show_blacklist_404(self):
     def test_update_blacklist_404(self):
     def test_delete_blacklist_404(self):
+
 class TestBlacklistInvalidIdAdmin(BaseBlacklistsTest):
 
     def test_show_blacklist_invalid_uuid(self):
     def test_update_blacklist_invalid_uuid(self):
     def test_delete_blacklist_invalid_uuid(self):
+
+Total Number of tests is: 14

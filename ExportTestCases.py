@@ -25,7 +25,10 @@ for path in paths:
                 class_tests[class_block[0]]=test_cases
         result.append([sc,class_tests])
 
+    total_test_number=0
     for item in result:
         print_in_color('#'*150,'bold')
         print_in_color(item[0], 'blue')
-        print_dic(item[1])
+        total_test_number+=print_tests(item[1])
+
+print_in_color('The total number of all tests is:'+str(total_test_number), 'blue')
