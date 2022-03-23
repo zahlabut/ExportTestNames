@@ -50,3 +50,8 @@ def print_tests(dic):
             number_of_tests+=1
     print_in_color('Total Number of tests is: '+str(number_of_tests), 'bold')
     return(number_of_tests)
+
+def pair_list(list):
+    list_length = len(list)
+    list.append(-1)
+    return [(list[i], list[i+1]) for i in range(0, list_length, 1)]
